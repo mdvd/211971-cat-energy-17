@@ -28,7 +28,82 @@
       </nav>
     </header>
     <main class="page-main">
-
+      <form class="form" action="https://echo.htmlacademy.ru">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
+        <div class="form__user-data">
+          <label class="form__text-label" for="name-input">
+            имя:*
+            <input class="form__text-input" id="name-input" type="text" name="name" value="" placeholder="БАРСИК">
+          </label>
+          <label class="form__text-label" for="weight-input">
+            вес(кг):*
+            <input class="form__text-input" id="weight-input" type="text" name="weight" value="" placeholder="7">
+          </label>
+        </div>
+        <div class="form__program-selection">
+          <label class="form__input-label" for="losing-weight">
+            Похудение
+            <input class="form__radio-input" id="losing-weight" type="radio" name="program" value="Похудение" checked>
+          </label>
+          <label class="form__input-label" for="mass-gain">
+            Набор массы
+            <input class="form__radio-input" id="mass-gain" type="radio" name="program" value="Набор массы">
+          </label>
+          <label class="form__input-label" for="need-advice">
+            Не знаю (нужен ваш совет)
+            <input class="form__radio-input" id="need-advice" type="radio" name="program" value="Не знаю (нужен ваш совет)">
+          </label>
+        </div>
+        <div class="form__contact-data">
+          <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+          <label class="form__text-label" for="email-input">
+            e-mail:*
+            <input class="form__text-input  form__text-input--email" id="email-input" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="form__text-label" for="phone-input">
+            Телефон:*
+            <input class="form__text-input  form__text-input--phone" id="phone-input" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90">
+          </label>
+        </div>
+        <div class="form__comment">
+          <h2 class="form__comment-title">Комментарий</h2>
+          <textarea class="form__comment-input" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+        <div class="form__additionaly">
+          <h2 class="form__additionaly-title">Дополнительно</h2>
+          <label class="form__checkbox-label" for="Sweetener">
+            Сахарозаменитель
+            <input class="form__checkbox-input" id="Sweetener" type="checkbox" name="additionaly" value="Сахарозаменитель" checked>
+          </label>
+          <label class="form__checkbox-label" for="water">
+            Питьевая вода
+            <input class="form__checkbox-input" id="water" type="checkbox" name="additionaly" value="Питьевая вода">
+          </label>
+          <label class="form__checkbox-label" for="milk">
+            Молоко
+            <input class="form__checkbox-input" id="milk" type="checkbox" name="additionaly" value="Молоко">
+          </label>
+          <label class="form__checkbox-label" for="vitamins">
+            Витамины
+            <input class="form__checkbox-input" id="vitamins" type="checkbox" name="additionaly" value="Витамины">
+          </label>
+        </div>
+        <button class="form__sent  btn" type="submit" name="button">Отправить заявку</button>
+        <span class="form__required-description"><sup>*</sup> — Обязательные поля</span>
+      </form>
+      <section class="contacts">
+        <div class="contacts__address-wrapper">
+          <b class="contacts__invite">приглашаем  к сотрудничеству  дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x400" alt="">
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
